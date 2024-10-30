@@ -1,0 +1,147 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  float: right;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.6);
+}
+
+.main {
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  clear: left;
+  font-size: 5rem;
+  color: #324249;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+  clear: both;
+}
+
+.creative {
+  color: #e1ae0d;
+}
+
+.tile-image {
+  flex: 10;
+  float: left;
+  height: 200px;
+  margin-right: 50px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 1px 0 9px #ffffff;
+}
+
+.card {
+  width: 49%;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+}
+
+a.left.card {
+  background-color: #607d8b;
+}
+
+a.right.card {
+  background-color: #e1ae0d;
+}
+
+p {
+  width: 100%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+@media (max-width: 680px) {
+  .logo {
+    width: 100px;
+  }
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .tile-image {
+    width: 100%;
+  }
+  footer {
+    float: right;
+  }
+}
+/*---------------*/
+
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 20px;
+  min-height: 100vh;
+}
+
+/* Layout Area Styles */
+.header {
+  grid-column: 1 / -1;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
+.left-sidebar {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.main-content {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.right-sidebar {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.footer {
+  grid-column: 1 / -1;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive Grid */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .left-sidebar, .right-sidebar {
+    grid-column: 1 / -1;
+  }
+}
