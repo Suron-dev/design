@@ -81,6 +81,12 @@ p {
   .logo {
     width: 100px;
   }
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .left-sidebar, .right-sidebar {
+    grid-column: 1 / -1;
+  }
   h1 {
     font-size: 3rem;
     text-align: center;
@@ -88,10 +94,18 @@ p {
   .tile-image {
     width: 100%;
   }
+  .card {
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
   footer {
     float: right;
   }
 }
+
+
 /*---------------*/
 
 
@@ -134,14 +148,4 @@ p {
   color: white;
   text-align: center;
   padding: 20px;
-}
-
-/* Responsive Grid */
-@media (max-width: 768px) {
-  .container {
-    grid-template-columns: 1fr;
-  }
-  .left-sidebar, .right-sidebar {
-    grid-column: 1 / -1;
-  }
 }
