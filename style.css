@@ -80,6 +80,7 @@ p {
 @media (max-width: 680px) {
   .logo {
     width: 100px;
+    display: block;
   }
   .container {
     grid-template-columns: 1fr;
